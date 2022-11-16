@@ -9,7 +9,7 @@ public class FileUtil {
 	static int count=0;
 	List<MyFile> files=new ArrayList<>();
 	public FileUtil() {
-		File f=new File("e://java");
+		File f=new File("C://tem");
 		String[] fs=f.list();
 		for(String file:fs)
 		{
@@ -19,7 +19,7 @@ public class FileUtil {
 	}
 	public List<MyFile> getFiles()
 	{
-		File f=new File("e://java");
+		File f=new File("C://tem);
 		String[] fs=f.list();
 		for(String file:fs)
 		{
@@ -29,7 +29,7 @@ public class FileUtil {
 		return files;
 	}
 	public void addFile(String fileName) throws IOException {
-		File f=new File("E://java//"+fileName+".txt");
+		File f=new File("C://tem//"+fileName+".txt");
 		f.createNewFile();
 	}
 	public boolean deleteFile(String fileName)
@@ -40,7 +40,7 @@ public class FileUtil {
 		{
 			if(file.getFileName().startsWith(fileName))
 			{
-				File f=new File("E://java//"+file.getFileName());
+				File f=new File("C://tem//"+file.getFileName());
 				f.delete();
 				isDeleted=true;
 				break;
